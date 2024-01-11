@@ -1,5 +1,11 @@
 # @sassywares/crust
 
+## 1.0.1
+
+### Patch Changes
+
+- fixed release script
+
 ## 1.0.0
 
 ### Major Changes
