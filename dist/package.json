@@ -22,6 +22,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "commit": "bash ./.scripts/commit.sh",
     "push": "git push && git push --tags",
     "release.prepare": "bash ./.scripts/release-prepare.sh",
@@ -32,12 +33,17 @@
     "clean": "rm -rf dist node_modules package-lock.json yarn.lock npm run-lock.yaml && npm cache clean --force"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1"
+    "@changesets/cli": "^2.27.1",
+    "tailwindcss": "^3.4.1"
   },
   "exports": {
     ".": {
       "import": "./index.js",
       "require": "./index.js"
+    },
+    "./spacing": {
+      "import": "./spacing.js",
+      "require": "./spacing.js"
     },
     "./package.json": "./package.json",
     "./README.md": "./README.md",

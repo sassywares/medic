@@ -1,15 +1,15 @@
 {
-  "name": "@sassywares/crust",
-  "version": "1.0.8",
+  "name": "@sassywares/medic",
+  "version": "0.0.1",
   "type": "module",
-  "description": "Crust is a simple boilerplate for creating and publishing packages to NPM. It includes a basic configuration for TypeScript, ESLint, Prettier, Vitest, and Changesets as well as a simple list of scripts for linting, testing, building, and publishing your package as well as a simple CI/CD workflow for GitHub Actions",
-  "main": "src/index.ts",
+  "description": "Medic is a minimal Tailwind Plugin that brings consistent, cross-breakpoint utilities to your applications. No need to set random padding and margin values, Medic's ergonomic API (stuff like p-layout) makes it easy to create consistent layouts across your application.",
+  "main": "index.js",
   "keywords": [
-    "boilerplate",
-    "typescript",
-    "eslint",
-    "prettier",
-    "changesets"
+    "tailwindcss",
+    "plugin",
+    "preset",
+    "css",
+    "css-in-js"
   ],
   "author": {
     "name": "Kashan Ahmad",
@@ -18,11 +18,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sassywares/crust.git"
+    "url": "git+https://github.com/sassywares/medic.git"
   },
   "license": "MIT",
   "scripts": {
-    "dev": "npx tailwindcss -i ./input.css -o ./output.css --watch",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
     "commit": "bash ./.scripts/commit.sh",
     "push": "git push && git push --tags",
     "release.prepare": "bash ./.scripts/release-prepare.sh",
@@ -33,13 +33,19 @@
     "clean": "rm -rf dist node_modules package-lock.json yarn.lock npm run-lock.yaml && npm cache clean --force"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
+    "@changesets/cli": "^2.27.1"
+  },
+  "dependencies": {
     "tailwindcss": "^3.4.1"
   },
   "exports": {
     ".": {
       "import": "./index.js",
       "require": "./index.js"
+    },
+    "./spacing": {
+      "import": "./spacing.js",
+      "require": "./spacing.js"
     },
     "./package.json": "./package.json",
     "./README.md": "./README.md",
