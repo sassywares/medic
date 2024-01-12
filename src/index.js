@@ -14,6 +14,10 @@ const properties = {
   gap: "gap",
   "gap-x": "column-gap",
   "gap-y": "row-gap",
+  top: "top",
+  right: "right",
+  bottom: "bottom",
+  left: "left",
 };
 
 const layoutLayer = {

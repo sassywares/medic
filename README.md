@@ -75,6 +75,14 @@ module.exports = {
 };
 ```
 
+## The Problem
+
+When building applications, you often need to set padding, margin, and gap values for your elements. You also need to set these values for different breakpoints. This can be a tedious process and you have to be consistent or your UI components are going to be not as sassy as they should. I'm referring to stuff like `gap-3 md:gap-4 lg:gap-5` for, maybe a card's content, and then repeating the same thing for every single card in your application, and then one day you decide to change the gap value for the medium breakpoint and you have to go through every single card and change the value. This is not fun and it's error-prone.
+
+## The Solution
+
+Medic 🚑 solves this problem by providing a set of ergonomic utilities that make it easy to create consistent layouts across your application. Simply say `gap-card` and you have all 3 values set for you. No need to set random padding, margin, or gap values, Medic 🚑 has you covered.
+
 ## Usage
 
 Medic 🚑 breaks down your layouts into three layers: layouts, cards, and elements. Each layer has its own set of utilities that you can use to create consistent layouts across your application.
@@ -136,12 +144,12 @@ Medic 🚑 includes the following properties for each layer:
 - gap: "gap"
 - "gap-x": "column-gap"
 - "gap-y": "row-gap"
+- "top": "top"
+- "right": "right"
+- "bottom": "bottom"
+- "left": "left"
 
 Need more properties? Please open an issue or a pull request.
-
-## Why Medic 🚑?
-
-It's not fun to set random padding, margin, or gap values for your elements. It's even less fun to set these values for different breakpoints. You're bound to make a mistake or two and end up having inconsistent layouts across your application. Medic 🚑 solves this problem by providing a set of ergonomic utilities that make it easy to create consistent layouts across your application.
 
 ## Contributing
 
