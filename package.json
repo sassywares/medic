@@ -1,6 +1,6 @@
 {
   "name": "@sassywares/medic",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "Medic is a minimal Tailwind Plugin that brings consistent, cross-breakpoint utilities to your applications. No need to set random padding and margin values, Medic's ergonomic API (stuff like p-layout) makes it easy to create consistent layouts across your application.",
   "main": "index.js",

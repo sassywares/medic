@@ -18,4 +18,4 @@ git tag $version
 echo "Generated git tag: $version"
 
 # 4. Commit, stage, and push the release
-# npm run commit && npm run push && echo 'Pushed tags to Remote';
+npm run commit && npm run push && echo 'Pushed tags to Remote';

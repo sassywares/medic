@@ -1,5 +1,11 @@
 # @sassywares/crust
 
+## 1.0.2
+
+### Patch Changes
+
+- added v to release names
+
 ## 1.0.1
 
 ### Patch Changes
