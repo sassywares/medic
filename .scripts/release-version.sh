@@ -11,7 +11,7 @@ npx changeset version;
 # We're not using the changeset tag command as that messes up in monorepos.
 # I've opened an issue here: https://github.com/changesets/changesets/issues/1284
 # Alternatively, we're using the following command to manually generate a git tag from the npm version.
-version="v$(npm run env | grep npm_package_version | cut -d'=' -f2)"
+version="$(npm run env | grep npm_package_version | cut -d'=' -f2)"
 
 git tag $version
 
